@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Faro</title>
+    <style>
+        body {
+            color: #fff;
+            background: url('wpp.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(0,0,0,0.72);
+            margin: 40px auto;
+            padding: 32px 24px;
+            border-radius: 14px;
+            max-width: 600px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+        }
+        h1, h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .profile {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #00e6e6;
+        }
+        .nome-animado {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            font-size: 1.3em;
+            color: #00e6e6;
+            margin-bottom: 18px;
+            animation: slide-left 10s linear infinite;
+            text-align: center;
+        }
+        @keyframes slide-left {
+            0% { text-indent: 100%; }
+            100% { text-indent: -100%; }
+        }
+        hr {
+            border: 1px solid #fff;
+        }
+        a {
+            color: #00e6e6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ffeb3b;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 18px 4vw;
+                max-width: 98vw;
+            }
+            .profile {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CURRICULUM VITAE</h1>
+        <img src="forma.jpeg" alt="Foto de Perfil" class="profile">
+        <div class="nome-animado">CRISTIAN SANTOS RIBEIRO</div>
+        <audio controls style="display:block; margin:0 auto 18px;">
+            <source src="RIM.MP3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <hr>
+        <h3><i>DADOS PESSOAIS:</i></h3>
+        <ul>
+            <li><strong>ENDEREÇO:</strong> TRAVESSA ADEMAR DE OLIVEIRA, N 70</li>
+            <li><strong>CELULAR:</strong> (75) 99885-2992</li>
+            <li><strong>EMAIL:</strong> CRISTIANSANTOSRIBEIRO0110@GMAIL.COM</li>
+        </ul>
+        <h3><i>ESCOLARIDADE:</i></h3>
+        <ul>
+            <li>
+                FORMADO NO ENSINO MÉDIO - C.E.T.I.I
+                <a href="https://www.instagram.com/Cetii.Itamira" target="_blank" rel="noopener">(Instagram do CETII)</a>
+            </li>
+            <li>
+                SISTEMAS DE INFORMAÇÃO - F.SS.S - ATUAL
+                <a href="https://fsssacramento.br/" target="_blank" rel="noopener">(Site da FSSS)</a>
+            </li>
+        </ul>
+        <h3><i>CURSOS EXTRAS:</i></h3>
+        <ul>
+            <li>SERVIÇOS GERAIS - GINÁSIO APORÁ - 18 HORAS</li>
+        </ul>
+    </div>
+    <!-- 
+    Opcional: vídeo de fundo 
+    <video autoplay muted loop style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-2; object-fit:cover;">
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+    -->
+</body>
+</html>
